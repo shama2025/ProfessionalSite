@@ -1,0 +1,25 @@
+.body {
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:black;
+    color: white;
+
+}
+
+  .about, .projects, .links, .work-exp {
+    padding: 20px;
+    text-align: center;
+  }
+
+.header{
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.brief, .about-me-text{
+    text-align: center;
+}

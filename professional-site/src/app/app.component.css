@@ -1,25 +1,67 @@
 .body {
-
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color:black;
-    color: white;
-
+  flex: 1;
+  overflow-y:auto;
+  background-color: black;
+  color: grey;
 }
 
-  .about, .projects, .links, .work-exp {
-    padding: 20px;
-    text-align: center;
-  }
+/* .container{
+  width: 100%;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1170px;
+} */
 
-.header{
-    text-align: center;
+.header, .work-exp, .about-me, .projects, .links {
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.headshot {
+  height: auto;
+  width: 100px; /* Adjust this value as needed */
+  object-fit: cover;
+  border-radius: 50%; /* Make it circular */
 }
 
 ul{
-    list-style: none;
+  list-style: none;
+}
+.image-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Add some space between containers */
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.brief, .about-me-text{
-    text-align: center;
+.brief-label {
+  font-size: 18px;
+  margin-left: 0px;
+  text-align: left;
+}
+.brief-text {
+  text-align: center;
+}
+
+.about-me-container{
+justify-content: center;
+align-items: center;
+}
+
+.about-me-text{
+  text-align: left;
+}
+
+.about-me-label{
+  text-align: left;
 }

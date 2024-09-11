@@ -9,4 +9,8 @@ import { Injectable } from '@angular/core';
 export class LandingPageServiceService {
 
   constructor() { }
+
+  getInterfaces(){
+    return [WORKEXP,PROJECTS,LINKS,]
+  }
 }

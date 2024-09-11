@@ -1,3 +1,4 @@
+import { LiteralArray } from '@angular/compiler';
 import { WORKEXP } from '../professional-interfaces';
 import { LINKS } from '../professional-interfaces';
 import { PROJECTS } from '../professional-interfaces';
@@ -9,7 +10,15 @@ import { Injectable } from '@angular/core';
 export class LandingPageServiceService {
   constructor() {}
 
-  getInterfaces() {
-    return [WORKEXP, PROJECTS, LINKS];
+  getWorkExp() {
+    return WORKEXP
+  }
+
+  getProjects(){
+    return PROJECTS
+  }
+
+  getLinks(){
+    return LINKS
   }
 }

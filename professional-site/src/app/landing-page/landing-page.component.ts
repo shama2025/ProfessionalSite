@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { LandingPageServiceService } from '../service/landing-page-service.service';
-import { WORKEXP } from '../professional-interfaces';
+import { links } from '../links';
+import { projects } from '../projects';
+import { workExp } from 'src/work-exp';
+
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
@@ -9,7 +12,13 @@ import { WORKEXP } from '../professional-interfaces';
 export class LandingPageComponent {
   constructor(private landingPageService: LandingPageServiceService) {}
 
+  links : links [] = [];
+  projects: projects[] = [];
+  workExp : workExp[] = [];
+
   ngOnInit(): void {
-    let interfaces = this.landingPageService.getInterfaces();
+  this.links = this.landingPageService.getLinks();
+  this.projects = this.landingPageService.getProjects();
+  this.workExp = this.landingPageService.getWorkExp();
   }
 }

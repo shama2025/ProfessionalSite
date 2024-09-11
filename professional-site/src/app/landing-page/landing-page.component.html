@@ -25,12 +25,12 @@
   <div class="header">
     <div class="work-exp-container">
       <div>
-        <h3 class="work-exp-label">Marcus Shaffer</h3>
+        <h3 class="work-exp-label">Work Experience</h3>
         <h5 class="work-exp-text">
           Student at Anderson University| Eagle Scout | Github: shama2025
         </h5>
         <ul class="work-exp-list">
-          <li class="work-exp-element" *ngFor=""></li>
+          <li class="work-exp-element" *ngFor="let interface in interfaces ; index as i">{{interface | json}}</li>
         </ul>
       </div>
     </div>
@@ -39,7 +39,7 @@
   <div class="header">
     <div class="projects-container">
       <div>
-        <h3 class="projects-label">Marcus Shaffer</h3>
+        <h3 class="projects-label">Side Projects</h3>
         <h5 class="projects-text">
           Student at Anderson University| Eagle Scout | Github: shama2025
         </h5>
@@ -53,7 +53,7 @@
   <div class="header">
     <div class="links-container">
       <div>
-        <h3 class="links-label">Marcus Shaffer</h3>
+        <h3 class="links-label">Links</h3>
         <h5 class="links-text">
           Student at Anderson University| Eagle Scout | Github: shama2025
         </h5>

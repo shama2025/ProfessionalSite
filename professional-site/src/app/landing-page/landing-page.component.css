@@ -3,6 +3,7 @@
   overflow-y:auto;
   background-color: black;
   color: grey;
+  padding-top: 100px;
 }
 
 .header {
@@ -37,10 +38,12 @@ ul{
   font-size: 18px;
   margin-left: 0px;
   text-align: left;
+  color: #FFFFFF;
 }
 
 .brief-text, .about-me-text, .work-exp-text, .projects-text, .links-text {
   text-align: center;
+  color: #A3A399
 }
 
 

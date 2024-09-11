@@ -1,7 +1,7 @@
-export interface projects{
-    name: string,
-    date: string,
-    desc: string,
-    tools: string,
-    link: string
+export interface projects {
+  name: string;
+  date: string;
+  desc: string;
+  tools: string;
+  link: string;
 }

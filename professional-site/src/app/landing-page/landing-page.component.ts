@@ -4,14 +4,12 @@ import { WORKEXP } from '../professional-interfaces';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.css']
+  styleUrls: ['./landing-page.component.css'],
 })
 export class LandingPageComponent {
-  constructor(private landingPageService: LandingPageServiceService){}
-
+  constructor(private landingPageService: LandingPageServiceService) {}
 
   ngOnInit(): void {
-    let interfaces = this.landingPageService.getInterfaces()
+    let interfaces = this.landingPageService.getInterfaces();
   }
-
 }

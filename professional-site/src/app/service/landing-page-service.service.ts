@@ -4,13 +4,12 @@ import { PROJECTS } from '../professional-interfaces';
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class LandingPageServiceService {
+  constructor() {}
 
-  constructor() { }
-
-  getInterfaces(){
-    return [WORKEXP,PROJECTS,LINKS,]
+  getInterfaces() {
+    return [WORKEXP, PROJECTS, LINKS];
   }
 }

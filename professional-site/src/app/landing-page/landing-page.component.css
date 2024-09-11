@@ -1,6 +1,6 @@
 .body {
   flex: 1;
-  overflow-y:auto;
+  overflow-y: auto;
   background-color: black;
   color: grey;
   padding-top: 100px;
@@ -19,14 +19,18 @@
   height: auto;
   width: 100px; /* Adjust this value as needed*/
   object-fit: cover;
-  border-radius: 50%;  /*Make it circular*/
+  border-radius: 50%; /*Make it circular*/
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-.image-container, .about-me-container, .work-exp-container, .projects-container, .links-container{
+.image-container,
+.about-me-container,
+.work-exp-container,
+.projects-container,
+.links-container {
   display: flex;
   align-items: center;
   margin-bottom: 20px; /* Add some space between containers */
@@ -34,16 +38,22 @@ ul{
   margin-bottom: 20px;
 }
 
-.brief-label, .about-me-label, .work-exp-label, .projects-label, .links-label {
+.brief-label,
+.about-me-label,
+.work-exp-label,
+.projects-label,
+.links-label {
   font-size: 18px;
   margin-left: 0px;
   text-align: left;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.brief-text, .about-me-text, .work-exp-text, .projects-text, .links-text {
+.brief-text,
+.about-me-text,
+.work-exp-text,
+.projects-text,
+.links-text {
   text-align: center;
-  color: #A3A399
+  color: #a3a399;
 }
-
-

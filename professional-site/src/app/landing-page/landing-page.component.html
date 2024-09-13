@@ -4,9 +4,9 @@
       <img src="headshot.png" alt="Marcus Shaffer Headshot" class="headshot" />
       <div>
         <h3 class="brief-label">Marcus Shaffer</h3>
-        <h5 class="brief-text">
+        <p class="brief-text">
           Student at Anderson University| Eagle Scout | Github: shama2025
-        </h5>
+        </p>
       </div>
     </div>
   </div>
@@ -15,9 +15,9 @@
     <div class="about-me-container">
       <div>
         <h3 class="about-me-label">About Me</h3>
-        <h5 class="about-me-text">
+        <p class="about-me-text">
           Student at Anderson University| Eagle Scout | Github: shama2025
-        </h5>
+        </p>
       </div>
     </div>
   </div>
@@ -26,12 +26,19 @@
     <div class="work-exp-container">
       <div>
         <h3 class="work-exp-label">Work Experience</h3>
-        <h5 class="work-exp-text">
-          Student at Anderson University| Eagle Scout | Github: shama2025
-        </h5>
-        <ul class="work-exp-list">
-          <li class="work-exp-element" *ngFor="let interface in interfaces ; index as i">{{interface | json}}</li>
-        </ul>
+
+        <!-- Make this a two column layout -->
+         <!-- One column is dates and the other is description of work -->
+         <div class="dates-column">
+          <p class="key-text">2023 - 2024</p>
+        </div>
+        <div class="info-column">
+          <!-- This is the right side column -->
+           <p class="value-header-text">Position Name</p>
+          <p class="value-text">
+            Description of position <span class="tools-text">This is the section of tools used</span>
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -40,12 +47,19 @@
     <div class="projects-container">
       <div>
         <h3 class="projects-label">Side Projects</h3>
-        <h5 class="projects-text">
-          Student at Anderson University| Eagle Scout | Github: shama2025
-        </h5>
-        <ul class="projects-list">
-          <li class="project-element" *ngFor=""></li>
-        </ul>
+
+        <!-- Make this a two column layout -->
+         <!-- One column is dates and the other is description of work -->
+         <div class="dates-column">
+          <p class="key-text">2023 - 2024</p>
+        </div>
+        <div class="info-column">
+          <a class="value-header-text" href="#">Name of project/link to github or netilfy site</a>
+          <!-- This is the right side column -->
+          <p class="value-text">
+            Name of side project <span class="tools-text">This is the section for tools used</span>
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -54,12 +68,16 @@
     <div class="links-container">
       <div>
         <h3 class="links-label">Links</h3>
-        <h5 class="links-text">
-          Student at Anderson University| Eagle Scout | Github: shama2025
-        </h5>
-        <ul class="links-list">
-          <li class="links-element" *ngFor=""></li>
-        </ul>
+
+        <!-- Make this a two column layout -->
+         <!-- One column is dates and the other is description of work -->
+         <div class="link-name-column">
+          <p class="key-text">name of link</p>
+        </div>
+        <div class="link-column">
+          <!-- This is the right side column -->
+           <a class="value-header-text" href="#">Link destination</a>
+        </div>
       </div>
     </div>
   </div>

@@ -22,10 +22,6 @@
   border-radius: 50%; /*Make it circular*/
 }
 
-ul {
-  list-style: none;
-}
-
 .image-container,
 .about-me-container,
 .work-exp-container,
@@ -49,11 +45,38 @@ ul {
   color: #ffffff;
 }
 
-.brief-text,
-.about-me-text,
-.work-exp-text,
-.projects-text,
-.links-text {
+.about-me-text, .brief-text{
   text-align: center;
   color: #a3a399;
+  border-color: #e2e8f0;
+}
+
+.key-text{
+  color: white;
+  opacity: 0.5;
+
+}
+
+.value-header-text{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.value-text{
+  color: #a3a399;
+}
+
+.tools-text{
+  color: white;
+  opacity: 0.5;
+}
+
+.dates-column, .link-name-colum{
+
+}
+
+.info-column, .link-column{
+
 }

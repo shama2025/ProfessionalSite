@@ -12,13 +12,13 @@ import { workExp } from 'src/work-exp';
 export class LandingPageComponent {
   constructor(private landingPageService: LandingPageServiceService) {}
 
-  links : links [] = [];
+  links: links[] = [];
   projects: projects[] = [];
-  workExp : workExp[] = [];
+  workExp: workExp[] = [];
 
   ngOnInit(): void {
-  this.links = this.landingPageService.getLinks();
-  this.projects = this.landingPageService.getProjects();
-  this.workExp = this.landingPageService.getWorkExp();
+    this.links = this.landingPageService.getLinks();
+    this.projects = this.landingPageService.getProjects();
+    this.workExp = this.landingPageService.getWorkExp();
   }
 }

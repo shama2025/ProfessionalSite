@@ -11,14 +11,14 @@ export class LandingPageServiceService {
   constructor() {}
 
   getWorkExp() {
-    return WORKEXP
+    return WORKEXP;
   }
 
-  getProjects(){
-    return PROJECTS
+  getProjects() {
+    return PROJECTS;
   }
 
-  getLinks(){
-    return LINKS
+  getLinks() {
+    return LINKS;
   }
 }

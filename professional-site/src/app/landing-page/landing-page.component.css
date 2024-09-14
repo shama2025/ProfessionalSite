@@ -6,10 +6,18 @@
   padding-top: 100px;
 }
 
-.header {
+.container{
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto; /* Center container horizontally */
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+.profile,.content,.about-me{
   padding: 20px;
   text-align: center;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -20,6 +28,13 @@
   width: 100px; /* Adjust this value as needed*/
   object-fit: cover;
   border-radius: 50%; /*Make it circular*/
+}
+
+.about-me-text{
+  overflow:hidden;
+  white-space:inherit;
+  word-wrap: break-word; /* Ensures text breaks properly */
+  overflow-wrap: break-word
 }
 
 .image-container,
@@ -43,40 +58,45 @@
   margin-left: 0px;
   text-align: left;
   color: #ffffff;
+  margin-bottom: 2.5rem;
 }
 
-.about-me-text, .brief-text{
+.brief-text {
   text-align: center;
   color: #a3a399;
   border-color: #e2e8f0;
 }
 
-.key-text{
+.key-text {
   color: white;
   opacity: 0.5;
-
 }
 
-.value-header-text{
+.value-header-text {
   color: #fff;
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
 }
 
-.value-text{
+.value-text {
   color: #a3a399;
 }
 
-.tools-text{
+.tools-text {
   color: white;
   opacity: 0.5;
 }
 
-.dates-column, .link-name-colum{
-
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1920px;
+  margin-bottom: 2.5rem;
 }
 
-.info-column, .link-column{
 
+
+.work-exp-desc,
+.projects-descs {
 }

@@ -3,5 +3,5 @@ export interface workExp {
   job: string;
   employer: string;
   desc: string;
-  tools: string;
+  toolsSkills: string;
 }

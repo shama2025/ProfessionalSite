@@ -33,6 +33,7 @@
 
     <div class="content">
       <div class="work-exp-container">
+        <!-- <div [innerHTML]="generateWorkExp()"></div> -->
         <div>
           <h3 class="work-exp-label">Work Experience</h3>
           <div class="info-grid">
@@ -65,6 +66,7 @@
       <div class="projects-container">
         <div>
           <h3 class="projects-label">Side Projects</h3>
+          <!-- <div [innerHTML]="generateProjects()"></div> -->
           <div class="info-grid">
             <p class="key-text">2023 - 2024</p>
             <div class="projects-desc">
@@ -104,24 +106,31 @@
         <div>
           <h3 class="links-label">Links</h3>
           <div class="info-grid">
-            <p class="key-text">name of link</p>
+            <p class="key-text">{{ links[0].site }}</p>
             <div class="link-desc">
-              <a class="value-header-text" href="#">Link destination</a>
+              <a class="value-header-text" [href]="links[0].link">{{
+                links[0].username
+              }}</a>
             </div>
           </div>
           <div class="info-grid">
-            <p class="key-text">name of link</p>
+            <p class="key-text">{{ links[1].site }}</p>
             <div class="link-desc">
-              <a class="value-header-text" href="#">Link destination</a>
+              <a class="value-header-text" [href]="links[1].link">{{
+                links[1].username
+              }}</a>
             </div>
           </div>
           <div class="info-grid">
-            <p class="key-text">name of link</p>
+            <p class="key-text">{{ links[2].site }}</p>
             <div class="link-desc">
-              <a class="value-header-text" href="#">Link destination</a>
+              <a class="value-header-text" [href]="'mailto:' + links[2].link">{{
+                links[2].username
+              }}</a>
             </div>
           </div>
         </div>
+        <!-- <div [innerHTML]="generateLinks()"></div> -->
       </div>
     </div>
   </div>

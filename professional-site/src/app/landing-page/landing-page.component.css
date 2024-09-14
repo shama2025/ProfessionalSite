@@ -6,7 +6,7 @@
   padding-top: 100px;
 }
 
-.container{
+.container {
   width: 80%;
   max-width: 800px;
   margin: 0 auto; /* Center container horizontally */
@@ -14,7 +14,9 @@
   padding: 20px;
 }
 
-.profile,.content,.about-me{
+.profile,
+.content,
+.about-me {
   padding: 20px;
   text-align: center;
   display: grid;
@@ -30,11 +32,11 @@
   border-radius: 50%; /*Make it circular*/
 }
 
-.about-me-text{
-  overflow:hidden;
-  white-space:inherit;
+.about-me-text {
+  overflow: hidden;
+  white-space: inherit;
   word-wrap: break-word; /* Ensures text breaks properly */
-  overflow-wrap: break-word
+  overflow-wrap: break-word;
 }
 
 .image-container,
@@ -94,8 +96,6 @@
   max-width: 1920px;
   margin-bottom: 2.5rem;
 }
-
-
 
 .work-exp-desc,
 .projects-descs {

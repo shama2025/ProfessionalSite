@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "professional-site:build:production"
+              "buildTarget": "professional-site:build:production"
             },
             "development": {
-              "browserTarget": "professional-site:build:development"
+              "buildTarget": "professional-site:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "professional-site:build"
+            "buildTarget": "professional-site:build"
           }
         },
         "test": {
@@ -90,6 +90,9 @@
             "styles": ["src/styles.css"],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

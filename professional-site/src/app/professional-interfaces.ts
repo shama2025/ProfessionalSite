@@ -59,8 +59,8 @@ export const PROJECTS: projects[] = [
   {
     name: 'Memory Game',
     date: 'Spring 2023',
-    desc: 'This was my first project as an Anderson University student, built with the purpose of playing a memory game consisting of 4 rounds and 12 cards per round. The purpose of this project was to practice OOP using C#.',
-    tools: 'C#',
+    desc: 'This was my first project as an Anderson University student, built with the purpose of playing a memory game consisting of 4 rounds and 12 cards per round. The purpose of this project was to practice OOP.',
+    tools: 'C# • OOP • Windows Forms App',
     link: 'Github Link',
   },
   {

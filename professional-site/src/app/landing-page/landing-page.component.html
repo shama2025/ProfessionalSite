@@ -3,7 +3,7 @@
     <div class="profile">
       <div class="image-container">
         <img
-          src="headshot.png"
+          src=""
           alt="Marcus Shaffer Headshot"
           class="headshot"
         />
@@ -60,10 +60,13 @@
 
       <div class="projects-container">
         <div>
-          <h3 class="projects-label">Side Projects</h3>
+          <h3 class="projects-label">Projects</h3>
           <div class="info-grid">
             <p class="key-text">{{ projects[0].date }}</p>
             <div class="projects-desc">
+              <div>
+                <img src="../../assets/default.png" class="project-img">
+              </div>
               <a class="value-header-text" [href]="projects[0].link">{{
                 projects[0].name
               }}</a>
@@ -75,6 +78,9 @@
           <div class="info-grid">
             <p class="key-text">{{ projects[1].date }}</p>
             <div class="projects-desc">
+              <div>
+                <img src="../../assets/default.png" class="project-img">
+              </div>
               <a class="value-header-text" [href]="projects[1].link">{{
                 projects[1].name
               }}</a>
@@ -86,6 +92,9 @@
           <div class="info-grid">
             <p class="key-text">{{ projects[2].date }}</p>
             <div class="projects-desc">
+              <div>
+                <img src="../../assets/default.png" class="project-img">
+              </div>
               <a class="value-header-text" [href]="projects[1].link">{{
                 projects[2].name
               }}</a>

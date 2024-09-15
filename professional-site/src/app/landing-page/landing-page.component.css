@@ -15,9 +15,7 @@
   padding: 20px;
 }
 
-.profile,
-/* .content, */
-.about-me {
+.profile{
   padding: 20px;
   text-align: center;
   display: grid;
@@ -50,8 +48,13 @@
   gap: 10px;
   margin-bottom: 20px;
 }
+.brief-label{
+  font-size: 18px;
+  margin-left: 0px;
+  text-align: left;
+  color: #ffffff;
+}
 
-.brief-label,
 .about-me-label,
 .work-exp-label,
 .projects-label,
@@ -99,4 +102,11 @@
 
 .work-exp-desc,
 .projects-descs {
+}
+
+.project-img{
+  height:min-content;
+  width: 50px; /* Adjust this value as needed*/
+  object-fit: cover;
+  border-radius: 50%;
 }

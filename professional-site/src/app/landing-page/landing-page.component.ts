@@ -21,5 +21,4 @@ export class LandingPageComponent {
     this.projects = this.landingPageService.getProjects();
     this.workExp = this.landingPageService.getWorkExp();
   }
-
 }

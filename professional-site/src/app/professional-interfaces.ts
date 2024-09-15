@@ -53,8 +53,8 @@ export const PROJECTS: projects[] = [
     name: 'Inferential',
     date: 'Fall 2023',
     desc: "For this project, I assisted in helping build the API for the inference tool. This tool is a basic inference engine housing different models to help teach the basics of inference and LLM's to students.",
-    tools: 'Python | HuggingFace | Vanilla JS, HTML, & CSS',
-    link: 'Github Repository',
+    tools: 'Python • HuggingFace • Vanilla JS • HTML • CSS',
+    link: 'https://github.com/jncraton/inferential',
   },
   {
     name: 'Memory Game',
@@ -67,7 +67,7 @@ export const PROJECTS: projects[] = [
     name: 'Athletic Trainer Site',
     date: 'Summer 2024',
     desc: 'My first side project, where I took what I learned from the IUK web team and classes at AU and built the frontend and backend for this site. The purpose of this site was to create a potential tool to help athletic trainers fill out Patient Outcome Reported Measure forms.',
-    tools: 'Angular | Python | MySQL',
-    link: '',
+    tools: 'Angular • Python • MySQL',
+    link: 'Github link to repository',
   },
 ];

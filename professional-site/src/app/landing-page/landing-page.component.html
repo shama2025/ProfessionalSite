@@ -10,7 +10,7 @@
         <div>
           <h3 class="brief-label">Marcus Shaffer</h3>
           <p class="brief-text">
-            Student at Anderson University| Eagle Scout | Github: shama2025
+            Student at Anderson University • Eagle Scout • Github: shama2025
           </p>
         </div>
       </div>
@@ -21,11 +21,7 @@
         <div>
           <h3 class="about-me-label">About Me</h3>
           <p class="about-me-text">
-            Student at Anderson University| Eagle Scout | Github:
-            shama2025Student at Anderson University| Eagle Scout | Github:
-            shama2025Student at Anderson University| Eagle Scout | Github:
-            shama2025Student at Anderson University| Eagle Scout | Github:
-            shama2025
+          Replace this with professional elevator pitch
           </p>
         </div>
       </div>
@@ -33,31 +29,30 @@
 
     <div class="content">
       <div class="work-exp-container">
-        <!-- <div [innerHTML]="generateWorkExp()"></div> -->
         <div>
           <h3 class="work-exp-label">Work Experience</h3>
           <div class="info-grid">
-            <p class="key-text">2023 - 2024</p>
+            <p class="key-text">{{workExp[0].date}}</p>
             <div class="work-exp-desc">
-              <p class="value-header-text">Position Name</p>
-              <p class="value-text">Description of position</p>
-              <p class="tools-text">This is the section of tools used</p>
+              <p class="value-header-text">{{workExp[0].employer}}</p>
+              <p class="value-text">{{workExp[0].desc}}</p>
+              <p class="tools-text">{{workExp[0].toolsSkills}}</p>
             </div>
           </div>
           <div class="info-grid">
-            <p class="key-text">2023 - 2024</p>
+            <p class="key-text">{{workExp[1].date}}</p>
             <div class="work-exp-desc">
-              <p class="value-header-text">Position Name</p>
-              <p class="value-text">Description of position</p>
-              <p class="tools-text">This is the section of tools used</p>
+              <p class="value-header-text">{{workExp[1].employer}}</p>
+              <p class="value-text">{{workExp[1].desc}}</p>
+              <p class="tools-text">{{workExp[1].toolsSkills}}</p>
             </div>
           </div>
           <div class="info-grid">
-            <p class="key-text">2023 - 2024</p>
+            <p class="key-text">{{workExp[2].date}}</p>
             <div class="work-exp-desc">
-              <p class="value-header-text">Position Name</p>
-              <p class="value-text">Description of position</p>
-              <p class="tools-text">This is the section of tools used</p>
+              <p class="value-header-text">{{workExp[2].employer}}</p>
+              <p class="value-text">{{workExp[2].desc}}</p>
+              <p class="tools-text">{{workExp[2].toolsSkills}}</p>
             </div>
           </div>
         </div>
@@ -66,37 +61,36 @@
       <div class="projects-container">
         <div>
           <h3 class="projects-label">Side Projects</h3>
-          <!-- <div [innerHTML]="generateProjects()"></div> -->
           <div class="info-grid">
-            <p class="key-text">2023 - 2024</p>
+            <p class="key-text">{{projects[0].date}}</p>
             <div class="projects-desc">
-              <a class="value-header-text" href="#"
-                >Name of project/link to github or netilfy site</a
+              <a class="value-header-text" [href]="projects[0].link"
+                >{{projects[0].name}}</a
               >
 
-              <p class="value-text">Name of side project</p>
-              <p class="tools-text">This is the section for tools used</p>
+              <p class="value-text">{{projects[0].desc}}</p>
+              <p class="tools-text">{{projects[0].tools}}</p>
             </div>
           </div>
           <div class="info-grid">
-            <p class="key-text">2023 - 2024</p>
+            <p class="key-text">{{projects[1].date}}</p>
             <div class="projects-desc">
-              <a class="value-header-text" href="#"
-                >Name of project/link to github or netilfy site</a
+              <a class="value-header-text" [href]="projects[1].link"
+                >{{projects[1].name}}</a
               >
 
-              <p class="value-text">Name of side project</p>
-              <p class="tools-text">This is the section for tools used</p>
+              <p class="value-text">{{projects[1].desc}}</p>
+              <p class="tools-text">{{projects[1].tools}}</p>
             </div>
           </div>
           <div class="info-grid">
-            <p class="key-text">2023 - 2024</p>
+            <p class="key-text">{{projects[2].date}}</p>
             <div class="projects-desc">
-              <a class="value-header-text" href="#"
-                >Name of project/link to github or netilfy site</a
+              <a class="value-header-text" [href]="projects[1].link"
+                >{{projects[2].name}}</a
               >
-              <p class="value-text">Name of side project</p>
-              <p class="tools-text">This is the section for tools used</p>
+              <p class="value-text">{{projects[2].desc}}</p>
+              <p class="tools-text">{{projects[2].tools}}</p>
             </div>
           </div>
         </div>
@@ -130,7 +124,6 @@
             </div>
           </div>
         </div>
-        <!-- <div [innerHTML]="generateLinks()"></div> -->
       </div>
     </div>
   </div>

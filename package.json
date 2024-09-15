@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "prettier . --write",
-    "deploy": "npx angular-cli-ghpages --dir=dist/professional-site"
+    "deploy": "npx angular-cli-ghpages --dir=dist/professional-site",
+    "build-site": "ng build --base-href=https://shama2025.github.io/ProfessionalSite"
   },
   "private": true,
   "dependencies": {

@@ -3,28 +3,28 @@ import { links } from './links';
 import { projects } from './projects';
 export const WORKEXP: workExp[] = [
   {
-    date: 'Summer 2024',
+    date: '2024',
     job: 'Quality Assurance Intern',
     employer: 'Karmak',
     desc: "Researched different mobile app automated testing frameworks. Created automated and manual tests for Karmak's mobile app and enterprise level application. Performed smoke and revalidation tests on the enterprise level application.",
     toolsSkills: 'Detox • BrowserStack • Appium • Azure DevOps',
   },
   {
-    date: 'Summer 2023',
+    date: '2023',
     job: 'Software Engineer Intern',
     employer: 'Genesys',
     desc: "In this role I worked with team members to create automated testing utilites. I also utilized Genesys's classes and learned about Python and machine learning.",
     toolsSkills: 'Java • Selenium • Jenkins • Groovy',
   },
   {
-    date: 'Fall 2022 - Spring 2024',
+    date: '2022 - 2024',
     job: 'Library Tech Worker',
     employer: 'Anderson University',
     desc: 'In this role I assisted students with printer and paper needs. I would help students who had questions about the library computers, printers, and custom paper. Worked with Archive department to scan documents.',
     toolsSkills: 'Customer Service • Tech Support',
   },
   {
-    date: 'Fall 2021 - Spring 2022',
+    date: '2021 - 2022',
     job: 'Indiana University Web Design Team',
     employer: 'Indiana University Kokomo',
     desc: 'Collaborated with fellow students to learn vanills HTML, JS, and CSS and research other frameworks such as React, Node, and Angular. Built projects using our knowledge of web design in multiple languages and frameworks.',

@@ -79,7 +79,7 @@
 
 .value-header-text {
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   text-decoration: none;
 }
@@ -98,10 +98,6 @@
   grid-template-columns: repeat(2, 1fr);
   max-width: 1920px;
   margin-bottom: 1.5rem;
-}
-
-.work-exp-desc,
-.projects-descs {
 }
 
 .project-img {

@@ -108,5 +108,5 @@
   height: min-content;
   width: 50px; /* Adjust this value as needed*/
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 25%;
 }

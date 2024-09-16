@@ -63,7 +63,7 @@ export const PROJECTS: projects[] = [
     desc: 'This was my first project as an Anderson University student, built with the purpose of playing a memory game consisting of 4 rounds and 12 cards per round. The purpose of this project was to practice OOP.',
     tools: 'C# • OOP • Windows Forms App',
     link: 'Github Link',
-    img: '/assets/cardImg.avif',
+    img: 'assets/cardImg.avif',
   },
   {
     name: 'Athletic Trainer Site',
@@ -71,6 +71,6 @@ export const PROJECTS: projects[] = [
     desc: 'My first side project, where I took what I learned from the IUK web team and classes at AU and built the frontend and backend for this site. The purpose of this site was to create a potential tool to help athletic trainers fill out Patient Outcome Reported Measure forms.',
     tools: 'Angular • Python • MySQL',
     link: 'Github link to repository',
-    img: '/assets/stethoscope.jpg',
+    img: 'assets/stethoscope.jpg',
   },
 ];

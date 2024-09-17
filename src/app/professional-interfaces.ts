@@ -56,7 +56,7 @@ export const PROJECTS: projects[] = [
     tools: 'Python • HuggingFace • Vanilla JS • HTML • CSS',
     link: 'https://github.com/jncraton/inferential',
     img: 'assets/inferentialLogo.jpg',
-    alt: 'Inferential Logo Image'
+    alt: 'Inferential Logo Image',
   },
   {
     name: 'Library Database',
@@ -65,7 +65,7 @@ export const PROJECTS: projects[] = [
     tools: 'C# • SQL • Windows Forms App • SSMS',
     link: 'https://github.com/shama2025/CPSCSQLPROJ',
     img: 'assets/pixelBooks.jpg',
-    alt: 'Pixel Book Image'
+    alt: 'Pixel Book Image',
   },
   {
     name: 'Athletic Trainer Site',
@@ -74,6 +74,6 @@ export const PROJECTS: projects[] = [
     tools: 'Angular • Python • MySQL',
     link: 'Github link to repository',
     img: 'assets/stethoscope.jpg',
-    alt: 'Pixel Stethoscope Image'
+    alt: 'Pixel Stethoscope Image',
   },
 ];

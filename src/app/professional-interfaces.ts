@@ -55,7 +55,8 @@ export const PROJECTS: projects[] = [
     desc: "For this project, I assisted in helping build the API for the inference tool. This tool is a basic inference engine housing different models to help teach the basics of inference and LLM's to students.",
     tools: 'Python • HuggingFace • Vanilla JS • HTML • CSS',
     link: 'https://github.com/jncraton/inferential',
-    img: 'assets/default.png',
+    img: 'assets/inferentialLogo.jpg',
+    alt: 'Inferential Logo Image'
   },
   {
     name: 'Library Database',
@@ -63,7 +64,8 @@ export const PROJECTS: projects[] = [
     desc: 'For this project, me and my partner were tasked with creating a database using SQL, for teachers, students, and faculty to checkout and donate books.',
     tools: 'C# • SQL • Windows Forms App • SSMS',
     link: 'https://github.com/shama2025/CPSCSQLPROJ',
-    img: 'assets/pixelBooks.webp',
+    img: 'assets/pixelBooks.jpg',
+    alt: 'Pixel Book Image'
   },
   {
     name: 'Athletic Trainer Site',
@@ -72,5 +74,6 @@ export const PROJECTS: projects[] = [
     tools: 'Angular • Python • MySQL',
     link: 'Github link to repository',
     img: 'assets/stethoscope.jpg',
+    alt: 'Pixel Stethoscope Image'
   },
 ];

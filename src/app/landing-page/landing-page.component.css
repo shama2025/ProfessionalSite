@@ -86,6 +86,7 @@
 
 .value-text {
   color: #a3a399;
+  word-break: break-word;
 }
 
 .tools-text {
@@ -101,8 +102,10 @@
 }
 
 .project-img {
-  height: min-content;
-  width: 50px; /* Adjust this value as needed*/
+  max-height: min-content;
+  max-width: 50px; /* Adjust this value as needed*/
+  min-width: 50px;
+  min-height: min-content;
   object-fit: cover;
   border-radius: 25%;
 }

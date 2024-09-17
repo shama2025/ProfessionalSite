@@ -5,4 +5,5 @@ export interface projects {
   tools: string;
   link: string;
   img: string;
+  alt: string;
 }

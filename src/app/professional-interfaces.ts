@@ -58,12 +58,12 @@ export const PROJECTS: projects[] = [
     img: 'assets/default.png',
   },
   {
-    name: 'Memory Game',
-    date: 'Spring 2023',
-    desc: 'This was my first project as an Anderson University student, built with the purpose of playing a memory game consisting of 4 rounds and 12 cards per round. The purpose of this project was to practice OOP.',
-    tools: 'C# • OOP • Windows Forms App',
-    link: 'Github Link',
-    img: 'assets/cardImg.avif',
+    name: 'Library Database',
+    date: 'Fall 2022',
+    desc: 'For this project, me and my partner were tasked with creating a database using SQL, for teachers, students, and faculty to checkout and donate books.',
+    tools: 'C# • SQL • Windows Forms App • SSMS',
+    link: 'https://github.com/shama2025/CPSCSQLPROJ',
+    img: 'assets/pixelBooks.webp',
   },
   {
     name: 'Athletic Trainer Site',

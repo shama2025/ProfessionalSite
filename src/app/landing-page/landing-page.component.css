@@ -24,13 +24,6 @@
   flex-direction: column;
 }
 
-.headshot {
-  height: auto;
-  width: 100px; /* Adjust this value as needed*/
-  object-fit: cover;
-  border-radius: 50%; /*Make it circular*/
-}
-
 .about-me-text {
   overflow: hidden;
   white-space: inherit;
@@ -49,8 +42,8 @@
   margin-bottom: 20px;
 }
 .brief-label {
-  font-size: 18px;
-  margin-left: 0px;
+  font-size: 25px;
+  font-weight: 400;
   text-align: left;
   color: #ffffff;
 }

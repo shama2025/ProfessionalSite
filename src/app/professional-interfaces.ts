@@ -70,9 +70,9 @@ export const PROJECTS: projects[] = [
   {
     name: 'Athletic Trainer Site',
     date: 'Summer 2024',
-    desc: 'My first side project, where I took what I learned from the IUK web team and classes at AU and built the frontend and backend for this site. The purpose of this site was to create a potential tool to help athletic trainers fill out Patient Outcome Reported Measure forms.',
-    tools: 'Angular • Python • MySQL',
-    link: 'Github link to repository',
+    desc: 'My first side project, where I took what I learned from the IUK web team and classes at AU and built the frontend and backend for this site as well as created the tests for. The purpose of this site was to create a potential tool to help athletic trainers and students fill out Patient Outcome Reported Measure forms.',
+    tools: 'Angular • Python • MySQL • UI/API Tests',
+    link: 'https://github.com/shama2025/student-injury',
     img: 'assets/stethoscope.jpg',
     alt: 'Pixel Stethoscope Image',
   },

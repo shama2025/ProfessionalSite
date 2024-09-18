@@ -46,6 +46,7 @@
   font-weight: 400;
   text-align: left;
   color: #ffffff;
+  word-wrap: break-word;
 }
 
 .about-me-label,
@@ -79,7 +80,8 @@
 
 .value-text {
   color: #a3a399;
-  word-break: break-word;
+  /* word-break: break-all; */
+  word-wrap: break-word;
 }
 
 .tools-text {

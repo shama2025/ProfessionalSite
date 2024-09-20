@@ -1,4 +1,4 @@
-.body {
+body {
   flex: 1;
   overflow-y: auto;
   background-color: black;
@@ -29,6 +29,7 @@
   white-space: inherit;
   word-wrap: break-word; /* Ensures text breaks properly */
   overflow-wrap: break-word;
+  font-family: Verdana, sans-serif;
 }
 
 .profile-container,
@@ -47,6 +48,7 @@
   text-align: left;
   color: #ffffff;
   word-wrap: break-word;
+  font-family: Verdana, sans-serif;
 }
 
 .about-me-label,
@@ -58,17 +60,23 @@
   text-align: left;
   color: #ffffff;
   margin-bottom: 2.5rem;
+  word-wrap: break-word;
+  font-family: Verdana, sans-serif;
 }
 
 .brief-text {
   text-align: center;
   color: #a3a399;
   border-color: #e2e8f0;
+  word-wrap: break-word;
+  font-family: Verdana, sans-serif;
 }
 
 .key-text {
   color: white;
   opacity: 0.5;
+  word-wrap: break-word;
+  font-family: Verdana, sans-serif;
 }
 
 .value-header-text {
@@ -76,17 +84,21 @@
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
+  word-wrap: break-word;
+  font-family: Verdana, sans-serif;
 }
 
 .value-text {
   color: #a3a399;
-  /* word-break: break-all; */
   word-wrap: break-word;
+  font-family: Verdana, sans-serif;
 }
 
 .tools-text {
+  word-wrap: break-word;
   color: white;
   opacity: 0.5;
+  font-family: Verdana, sans-serif;
 }
 
 .info-grid {
@@ -101,6 +113,15 @@
   max-width: 50px; /* Adjust this value as needed*/
   min-width: 50px;
   min-height: min-content;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 25%;
+}
+
+.role-text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.75;
+  word-wrap: break-word;
+  font-family: Verdana, sans-serif;
 }

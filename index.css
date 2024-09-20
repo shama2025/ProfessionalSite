@@ -77,13 +77,13 @@ body {
 .key-text {
   color: white;
   opacity: 0.5;
+  font-weight: 400;
   word-wrap: break-word;
   font-family: Verdana, sans-serif;
 }
 
 .value-header-text {
   color: #fff;
-  font-size: 18px;
   font-weight: 400;
   text-decoration: none;
   word-wrap: break-word;
@@ -126,4 +126,9 @@ body {
   opacity: 0.75;
   word-wrap: break-word;
   font-family: Verdana, sans-serif;
+}
+
+.link-desc{
+  display: flex;
+  align-items: center;
 }

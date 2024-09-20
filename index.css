@@ -51,6 +51,8 @@ body {
   color: #ffffff;
   word-wrap: break-word;
   font-family: Verdana, sans-serif;
+  display: flex;
+  align-items: center;
 }
 
 .about-me-label,

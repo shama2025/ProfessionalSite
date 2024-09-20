@@ -47,12 +47,10 @@ body {
 .brief-label {
   font-size: 25px;
   font-weight: 400;
-  text-align: left;
+  /* text-align: left; */
   color: #ffffff;
   word-wrap: break-word;
   font-family: Verdana, sans-serif;
-  display: flex;
-  align-items: center;
 }
 
 .about-me-label,

@@ -89,7 +89,8 @@ body {
   word-wrap: break-word;
 }
 
-.tools-text {
+.tools-text,
+.inline-text {
   word-wrap: break-word;
   color: white;
   opacity: 0.5;
@@ -119,6 +120,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .inline-link {
   text-decoration: none;
 }
@@ -128,15 +130,12 @@ body {
   opacity: 0.5;
   text-decoration: none;
   font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .additions-link:hover,
 .inline-link:hover {
   text-decoration: underline;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

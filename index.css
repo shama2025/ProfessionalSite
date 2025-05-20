@@ -37,6 +37,7 @@ body {
 .profile-container,
 .about-me-container,
 .work-exp-container,
+.ed-container,
 .projects-container {
   display: flex;
   align-items: center;
@@ -54,6 +55,7 @@ body {
 .about-me-label,
 .work-exp-label,
 .projects-label,
+.ed-exp-label,
 .links-label {
   font-size: 18px;
   margin-left: 0px;

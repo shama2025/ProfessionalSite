@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minimal Kaboom Game</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: white;
+      font-family: sans-serif;
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      border: 2px solid #444;
+    }
+  </style>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="container">
+        <div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html" class="value-header-text">Home</a></li>
+                <li><a href="game.html" class="value-header-text">Interactive Resume</a></li>
+                <li><a href="ai.html" class="value-header-text">Ask My AI</a></li>
+            </ul>
+        </nav>
+
+        </div>
+  <canvas id="game"></canvas>
+  </div>
+
+
+  <script src="https://unpkg.com/kaboom/dist/kaboom.js"></script>
+  <script>
+    kaboom({
+      canvas: document.getElementById("game"),
+      width: 640,
+      height: 360,
+      scale: 2,
+      background: [30, 30, 40],
+    });
+
+    // Player
+    const player = add([
+      rect(16, 16),
+      pos(80, 80),
+      area(),
+      color(0, 200, 255),
+    ]);
+
+    // Object (e.g. diploma)
+    const diploma = add([
+      rect(16, 16),
+      pos(200, 150),
+      area(),
+      color(255, 200, 0),
+      "diploma",
+    ]);
+
+    // Movement
+    const SPEED = 120;
+
+    onKeyDown("left",  () => player.move(-SPEED, 0));
+    onKeyDown("right", () => player.move(SPEED, 0));
+    onKeyDown("up",    () => player.move(0, -SPEED));
+    onKeyDown("down",  () => player.move(0, SPEED));
+
+    // Interaction text
+    let message = null;
+
+    onCollide(player, "diploma", () => {
+      if (!message) {
+        message = add([
+          text("This is my diploma!", { size: 16 }),
+          pos(20, 20),
+          color(255, 255, 255),
+        ]);
+      }
+    });
+
+    onCollideEnd(player, "diploma", () => {
+      if (message) {
+        destroy(message);
+        message = null;
+      }
+    });
+  </script>
+</body>
+</html>

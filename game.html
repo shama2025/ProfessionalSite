@@ -1,105 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Minimal Kaboom Game</title>
+<head>
+  <meta charset="UTF-8" />
+  <title>Kaboom Test</title>
+  <style>
 
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        background: #111;
-        color: white;
-        font-family: sans-serif;
-        height: 100%;
-      }
+    *{
+      background-color: black;
+    }
 
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    #app{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <div id="ui">
+    <canvas id="game"></canvas>
+  </div>
+</div>
 
-      canvas {
-        border: 2px solid #444;
-      }
-    </style>
-    <link rel="stylesheet" href="index.css" />
-  </head>
+<script src="https://unpkg.com/kaboom/dist/kaboom.js"></script>
+<script>
+  const k = kaboom({
+    canvas: document.getElementById("game"),
+    width: 640,
+    height: 360,
+    scale: 2,
+    background: [30, 30, 40],
+    touchToMouse: true,
+    global: false,
+  });
 
-  <body>
-    <div class="container">
-      <div>
-        <nav class="navbar">
-          <ul class="nav-links">
-            <li><a href="index.html" class="value-header-text">Home</a></li>
-            <li>
-              <a href="game.html" class="value-header-text"
-                >Interactive Resume</a
-              >
-            </li>
-            <li><a href="ai.html" class="value-header-text">Ask My AI</a></li>
-          </ul>
-        </nav>
-      </div>
-      <canvas id="game"></canvas>
-    </div>
+  k.loadSprite("spritesheet", "./assets/spritesheet.png", {
+    sliceX: 39,
+    sliceY: 31,
+    anims: {
+      "idle-down": 936,
+      "walk-down": { from: 936, to: 939, loop: true, speed: 8 },
+      "idle-side": { from: 975, to: 975 },
+      "walk-side": { from: 975, to: 978, loop: true, speed: 8 },
+      "idle-up": { from: 1014, to: 1014 },
+      "walk-up": { from: 1014, to: 1017, loop: true, speed: 8 },
+    },
+  });
 
-    <script src="https://unpkg.com/kaboom/dist/kaboom.js"></script>
-    <script>
-      kaboom({
-        canvas: document.getElementById("game"),
-        width: 640,
-        height: 360,
-        scale: 2,
-        background: [30, 30, 40],
-      });
+  k.loadSprite("map", "./assets/map.png");
 
-      // Player
-      const player = add([
-        rect(16, 16),
-        pos(80, 80),
-        area(),
-        color(0, 200, 255),
-      ]);
+  k.setBackground(k.color.fromHex("#311047"))
 
-      // Object (e.g. diploma)
-      const diploma = add([
-        rect(16, 16),
-        pos(200, 150),
-        area(),
-        color(255, 200, 0),
-        "diploma",
-      ]);
+</script>
 
-      // Movement
-      const SPEED = 120;
-
-      onKeyDown("left", () => player.move(-SPEED, 0));
-      onKeyDown("right", () => player.move(SPEED, 0));
-      onKeyDown("up", () => player.move(0, -SPEED));
-      onKeyDown("down", () => player.move(0, SPEED));
-
-      // Interaction text
-      let message = null;
-
-      onCollide(player, "diploma", () => {
-        if (!message) {
-          message = add([
-            text("This is my diploma!", { size: 16 }),
-            pos(20, 20),
-            color(255, 255, 255),
-          ]);
-        }
-      });
-
-      onCollideEnd(player, "diploma", () => {
-        if (message) {
-          destroy(message);
-          message = null;
-        }
-      });
-    </script>
-  </body>
+</body>
 </html>

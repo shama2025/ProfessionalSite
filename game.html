@@ -1,58 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Kaboom Test</title>
-  <style>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kaboom Test</title>
+    <style>
+      * {
+        background-color: black;
+      }
 
-    *{
-      background-color: black;
-    }
+      #app {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="ui">
+        <canvas id="game"></canvas>
+      </div>
+    </div>
 
-    #app{
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-  </style>
-</head>
-<body>
-<div id="app">
-  <div id="ui">
-    <canvas id="game"></canvas>
-  </div>
-</div>
+    <script src="https://unpkg.com/kaboom/dist/kaboom.js"></script>
+    <script>
+      const k = kaboom({
+        canvas: document.getElementById("game"),
+        width: 640,
+        height: 360,
+        scale: 2,
+        background: [30, 30, 40],
+        touchToMouse: true,
+        global: false,
+      });
 
-<script src="https://unpkg.com/kaboom/dist/kaboom.js"></script>
-<script>
-  const k = kaboom({
-    canvas: document.getElementById("game"),
-    width: 640,
-    height: 360,
-    scale: 2,
-    background: [30, 30, 40],
-    touchToMouse: true,
-    global: false,
-  });
+      k.loadSprite("spritesheet", "./assets/spritesheet.png", {
+        sliceX: 39,
+        sliceY: 31,
+        anims: {
+          "idle-down": 936,
+          "walk-down": { from: 936, to: 939, loop: true, speed: 8 },
+          "idle-side": { from: 975, to: 975 },
+          "walk-side": { from: 975, to: 978, loop: true, speed: 8 },
+          "idle-up": { from: 1014, to: 1014 },
+          "walk-up": { from: 1014, to: 1017, loop: true, speed: 8 },
+        },
+      });
 
-  k.loadSprite("spritesheet", "./assets/spritesheet.png", {
-    sliceX: 39,
-    sliceY: 31,
-    anims: {
-      "idle-down": 936,
-      "walk-down": { from: 936, to: 939, loop: true, speed: 8 },
-      "idle-side": { from: 975, to: 975 },
-      "walk-side": { from: 975, to: 978, loop: true, speed: 8 },
-      "idle-up": { from: 1014, to: 1014 },
-      "walk-up": { from: 1014, to: 1017, loop: true, speed: 8 },
-    },
-  });
+      k.loadSprite("map", "./assets/map.png");
 
-  k.loadSprite("map", "./assets/map.png");
-
-  k.setBackground(k.color.fromHex("#311047"))
-
-</script>
-
-</body>
+      k.setBackground(k.color.fromHex("#311047"));
+    </script>
+  </body>
 </html>

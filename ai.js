@@ -77,6 +77,7 @@ async function generateResponse(query) {
     console.log("Streaming!");
   } catch (error) {
     console.error(error);
+    createStaticAIMessage(`Error: ${error}`);
   }
 }
 

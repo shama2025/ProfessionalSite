@@ -36,12 +36,13 @@ staticInput.addEventListener("keydown", function (event) {
   // On enter, the prompt will be sent to the backend
   if (event.key === "Enter") {
     event.preventDefault();
-    const query = floatingInput.value.trim();
+    const query = staticInput.value.trim();
     if (!query) return;
 
     createUserMessage(query);
     generateResponse(query);
-    alert("This works!");
+
+    staticInput.value = "";
   }
 });
 
@@ -51,6 +52,7 @@ staticChatButton.addEventListener("click", async (event) => {
   if (!query) return;
   createUserMessage(query);
   generateResponse(query);
+  staticInput.value = "";
 });
 
 // Helper functions
@@ -67,7 +69,7 @@ async function generateResponse(query) {
         "Content-Type": "application/json",
       },
     });
-    console.log(response);
+
     if (!response.ok) {
       createStaticAIMessage("Error Fetching answer, please try again!");
     }
@@ -101,6 +103,7 @@ async function streamAIMessage(reader) {
   const decoder = new TextDecoder();
   const msg = document.createElement("div");
   msg.classList.add("message-bot");
+  //msg.innerHTML = `<div class="loader"><div></div><div></div><div></div></div>`
   chatContainer.appendChild(msg);
   let answer = "";
 

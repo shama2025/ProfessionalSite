@@ -61,6 +61,14 @@ async function generateResponse(query) {
   // Sends query to api for processing
   const url = `${BASE_URL}/ai`;
 
+  // Loader container
+  const msg = document.createElement("div");
+  const loader = document.createElement("div");
+  loader.classList.add("loader");
+  loader.innerHTML = "<div></div><div></div><div></div>";
+  chatContainer.appendChild(msg);
+  msg.appendChild(loader);
+
   try {
     const response = await fetch(url, {
       method: "POST",
@@ -74,8 +82,10 @@ async function generateResponse(query) {
       createStaticAIMessage("Error Fetching answer, please try again!");
     }
 
+    loader.remove();
+
     const reader = response.body.getReader();
-    streamAIMessage(reader);
+    streamAIMessage(reader, msg);
     console.log("Streaming!");
   } catch (error) {
     console.error(error);
@@ -99,22 +109,35 @@ function createUserMessage(question) {
   chatContainer.appendChild(msg);
 }
 
-async function streamAIMessage(reader) {
-  const decoder = new TextDecoder();
-  const msg = document.createElement("div");
+async function streamAIMessage(reader, msg) {
+  // Streams response from Flask API
+  // Since Streaming isn't supported on the API hosts, it had to be faked
   msg.classList.add("message-bot");
-  //msg.innerHTML = `<div class="loader"><div></div><div></div><div></div></div>`
-  chatContainer.appendChild(msg);
-  let answer = "";
 
-  while (true) {
-    const { value, done } = await reader.read();
-    if (done) break;
+  scrollToLatestMessage();
 
-    const chunk = decoder.decode(value, { stream: true });
-    answer += chunk;
-    msg.textContent = answer;
-    scrollToLatestMessage();
+  try {
+    const chunks = [];
+    const decoder = new TextDecoder();
+
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      chunks.push(decoder.decode(value, { stream: true }));
+    }
+
+    const fullText = chunks.join("");
+
+    msg.textContent = "";
+    for (let i = 0; i < fullText.length; i++) {
+      msg.textContent += fullText[i];
+      scrollToLatestMessage();
+      await new Promise((r) => setTimeout(r, 25));
+    }
+  } catch (err) {
+    loader.remove();
+    msg.textContent = "Error fetching response!";
+    console.error(err);
   }
 }
 

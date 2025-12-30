@@ -8,7 +8,7 @@ const staticChatButton = document.getElementById("static-chat-btn");
 const chatContainer = document.getElementById("chat-container");
 
 // Util variables
-const BASE_URL = "http://127.0.0.1:5000";
+const BASE_URL = "https://shaffemarcus.pythonanywhere.com";
 
 // Event Listeners
 window.addEventListener("load", () => {

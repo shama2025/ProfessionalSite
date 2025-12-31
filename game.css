@@ -6,7 +6,6 @@
 body {
   font-family: monogram, monospace;
   font-size: 2rem;
-  overflow: hidden;
   background-color: black;
 }
 
@@ -109,6 +108,13 @@ canvas {
   color: white;
   text-decoration: none;
   letter-spacing: 0.1rem;
+}
+
+.value-header-text {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  word-wrap: break-word;
 }
 
 .nav-links a:hover {

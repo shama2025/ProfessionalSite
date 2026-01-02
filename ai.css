@@ -5,7 +5,7 @@ body {
   color: grey;
   margin-inline-end: auto;
   font-family: Verdana, sans-serif;
-  padding-top:100px;
+  padding-top: 100px;
 }
 
 .container {
@@ -81,7 +81,7 @@ html {
   font-size: 1rem;
   resize: none;
   overflow: hidden;
-  color:white;
+  color: white;
 }
 
 .chat-input:focus {

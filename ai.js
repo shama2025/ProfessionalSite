@@ -105,6 +105,7 @@ function createUserMessage(question) {
   // Appends the users query to the container
   const msg = document.createElement("div");
   msg.classList.add("message-user");
+  msg.style.color = "white";
   msg.textContent = question;
   chatContainer.appendChild(msg);
 }
@@ -113,6 +114,7 @@ async function streamAIMessage(reader, msg) {
   // Streams response from Flask API
   // Since Streaming isn't supported on the API hosts, it had to be faked
   msg.classList.add("message-bot");
+  msg.style.color = "white";
 
   scrollToLatestMessage();
 

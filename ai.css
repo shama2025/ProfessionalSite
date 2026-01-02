@@ -81,6 +81,7 @@ html {
   font-size: 1rem;
   resize: none;
   overflow: hidden;
+  color:white;
 }
 
 .chat-input:focus {

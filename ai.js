@@ -88,8 +88,10 @@ async function generateResponse(query) {
     streamAIMessage(reader, msg);
     console.log("Streaming!");
   } catch (error) {
+    loader.remove();
     console.error(error);
     createStaticAIMessage(`Error: ${error}`);
+    scrollToLatestMessage();
   }
 }
 

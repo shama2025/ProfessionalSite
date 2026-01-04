@@ -1,9 +1,5 @@
 [
   {
-    "question": "Who is Marcus Shaffer?",
-    "answer": ""
-  },
-  {
     "question": "Where did Marcus Shaffer go to college?",
     "answer": "Marcus went to Anderson University where he majored in Computer Science and graduated cum laude."
   },
@@ -13,7 +9,7 @@
   },
   {
     "question": "Which tools does Marcus use for test development?",
-    "answer": ""
+    "answer": "For test development, Marcus has used Selenium and Playwright for UI and API testing. To incorporate CI/CD Marcus has used Azuer DevOps Pipeline tool and Jenkins and has built custom scripts for both!"
   },
   {
     "question": "What is Marcus's current profession?",

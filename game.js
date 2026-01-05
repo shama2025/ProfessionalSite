@@ -69,7 +69,7 @@ const M = {
   tv: "That’s my TV. I enjoy watching detective comedy-drama shows like Psych and White Collar.",
   bed: "This is where I sleep and come up with ideas for future projects, or relax by playing some video games.",
   resume:
-    'This is my desk, and on it is my resume. <a href="#ChangeMe" target="_blank">Check it out!</a>\nContact me at shaffemarcus@gmail.com if you have any interesting job opportunities.',
+    'This is my desk, and on it is my resume. <a href="./Resume.pdf" target="_blank">Check it out!</a>\nContact me at shaffemarcus@gmail.com if you have any interesting job opportunities.',
   projects:
     "I’ve created a wide variety of projects, but a few I’m most proud of are my ImageMap Generator (a web app wrapped in Capacitor for mobile use), an IT RAG model with a ChatGPT-like interface designed for my City of Anderson IT position, and my e-commerce site—a full-stack application built with Angular and Java’s Spring framework.",
   library:

@@ -6,14 +6,35 @@ const bottom = document.getElementById("bottom-form-box");
 const staticInput = document.getElementById("static-chat-input");
 const staticChatButton = document.getElementById("static-chat-btn");
 const chatContainer = document.getElementById("chat-container");
+const helpBtn = document.getElementById("question-help-btn");
+const helpModal = document.getElementById("question-help-modal");
+const closeHelpBtn = document.getElementById("close-help");
 
 // Util variables
+
 const BASE_URL = "https://shaffemarcus.pythonanywhere.com";
 
 // Event Listeners
+
 window.addEventListener("load", () => {
   header.hidden = false;
   bottom.hidden = true;
+
+  const firstVisit = localStorage.getItem("firstVisit");
+  if (!firstVisit) {
+    helpModal.classList.remove("hidden");
+    localStorage.setItem("firstVisit", "true");
+  }
+});
+
+helpBtn.addEventListener("click", () => {
+  // Open modal when button clicked
+  helpModal.classList.remove("hidden");
+});
+
+closeHelpBtn.addEventListener("click", () => {
+  // Close modal
+  helpModal.classList.add("hidden");
 });
 
 floatingInput.addEventListener("keydown", function (event) {

@@ -20,11 +20,11 @@ window.addEventListener("load", () => {
   header.hidden = false;
   bottom.hidden = true;
 
-  const firstVisit = localStorage.getItem("firstVisit");
-  if (!firstVisit) {
-    helpModal.classList.remove("hidden");
-    localStorage.setItem("firstVisit", "true");
-  }
+  // const firstVisit = localStorage.getItem("firstVisit");
+  // if (!firstVisit) {
+  //   helpModal.classList.remove("hidden");
+  //   localStorage.setItem("firstVisit", "true");
+  // }
 });
 
 helpBtn.addEventListener("click", () => {

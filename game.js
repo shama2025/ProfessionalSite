@@ -61,7 +61,7 @@ var e,
   }
 })();
 const M = {
-  pc: 'This is my PC, where I mostly program full-stack web applications using Angular with Flask as the backend. I’ve also built a few mobile apps as well. If you’d like to see more of my work, here’s my <a href="https://github.com/shama2025" target="_blank">GitHub</a>.',
+  pc: 'This is my PC, where I mostly program full-stack web applications such as ManaVault and my Make-A-Map site as well as an open source AI project E.N.D.E.R. I’ve also built a few mobile apps as well. If you’d like to see more of my work, here’s my <a href="https://github.com/shama2025" target="_blank">GitHub</a>.',
   "cs-degree":
     "This is my CS degree. I earned a B.S. from Anderson University, where I was taught how to think like a software engineer, understand how AI models work, and develop the skills needed to work professionally in the field.",
   "sofa-table":

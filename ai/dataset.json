@@ -5,7 +5,7 @@
   },
   {
     "question": "Which programming languages is Marcus proficient in?",
-    "answer": "Marcus is well versed in a multitude of languges. "
+    "answer": "Marcus is well versed in a multitude of languges, but is most proficient in Java. "
   },
   {
     "question": "Which tools does Marcus use for test development?",
@@ -13,7 +13,7 @@
   },
   {
     "question": "What is Marcus's current profession?",
-    "answer": "Marcus has two jobs, both part time. One is with Tractor Supply working on their orderfill team at the warehouse. The second job is an intern with the city of anderson, where he creates tools for the IT department."
+    "answer": "Marcus is currently a Software Developer Associate with Dev10. In this whole, Marcus was trained in fullstack development and has a future role with Schnieder, a logistics company as a software developer. Marcus also works on the side with an engineering company, continuing development of the Make-A-Map web application."
   },
   {
     "question": "What were Marcus’s responsibilities at Karmak?",
@@ -36,24 +36,8 @@
     "answer": "As an intern with Genesys, Marcus became proficient in Selenium, Git, and creating Jenkinsfiles."
   },
   {
-    "question": "What is the Inferential project about?",
-    "answer": "Inferential was a group project created by the 2023 Anderson University Software Engineering Class. Inferential is a lightweight inference engine to teach students about the basics of models inference. It utilizes both ctranslate2 and ctransformers for streaming. Marcus played a key role in the backend development creating the function for inference."
-  },
-  {
-    "question": "What technologies did Marcus use for the Inferential project?",
-    "answer": "Marcus used such technologies as python's flask library, vanilla JavaScript, HTML, CSS, and various hugging face models."
-  },
-  {
-    "question": "What is the MTG Chatbot project?",
-    "answer": "The MTG Chatbot is a knowledge expert for Magic the Gathering cards. Powered by the Scryfall API, this app helps users obtain the rules, general information, and the included sets."
-  },
-  {
-    "question": "Which platforms does the MTG Chatbot support?",
-    "answer": "Marcus made this app in both Kotlin and Swift and can be found on the iOS app store."
-  },
-  {
-    "question": "What is the Ecom project?",
-    "answer": "Ecom is a full stack application built with Angular and Java's Spring API. Built to be a Facebook Marketplace dupe, this application features a RESTful API and utilized the JROM to add addiotional abstraction when managing user data."
+    "question": "What is the ENDER project?",
+    "answer": "With the rise of cyberdecks and privacy, Marcus created the E.N.D.E.R project. This project is designed to put a Jarvis-like AI onto the smallest possible hardware on a raspberry pi. People are able to clone and add additional functionality to the ender chatbot as needed."
   },
   {
     "question": "What are some of Marcus's hobbies",
